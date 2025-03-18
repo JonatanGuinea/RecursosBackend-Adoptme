@@ -22,7 +22,5 @@ const schema = new mongoose.Schema({
     },
     image:String
 })
-
-const petModel = mongoose.model(collection,schema);
-
+const petModel = mongoose.models[collection] || mongoose.model(collection, schema);
 export default petModel;
