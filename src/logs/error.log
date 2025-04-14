@@ -1,0 +1,6 @@
+{"level":"info","message":"Request method : GET, URL : /api/pets","timestamp":"2025-04-05T00:01:24.830Z"}
+{"level":"info","message":"Request method : GET, URL : /api/pets","timestamp":"2025-04-05T00:01:45.255Z"}
+{"level":"info","message":"Request method : GET, URL : /","timestamp":"2025-04-05T00:01:53.443Z"}
+{"level":"warn","message":"Alerta warn","timestamp":"2025-04-05T00:01:53.443Z"}
+{"level":"info","message":"Request method : GET, URL : /","timestamp":"2025-04-05T00:03:19.188Z"}
+{"level":"warn","message":"Alerta warn","timestamp":"2025-04-05T00:03:19.191Z"}

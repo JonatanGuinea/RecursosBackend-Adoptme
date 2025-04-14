@@ -1,0 +1,85 @@
+openapi: 3.0.0
+info:
+  title: AdoptMe API
+  description: API para la gestión de usuarios y adopciones
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:8000/api
+
+tags:
+  - name: Users
+    description: Endpoints para gestión de usuarios
+
+paths:
+  /users:
+    get:
+      tags:
+        - Users
+      summary: Obtener todos los usuarios
+      responses:
+        '200':
+          description: Lista de usuarios obtenida exitosamente
+
+  /users/{uid}:
+    get:
+      tags:
+        - Users
+      summary: Obtener un usuario por ID
+      parameters:
+        - in: path
+          name: uid
+          required: true
+          schema:
+            type: string
+          description: ID del usuario
+      responses:
+        '200':
+          description: Usuario encontrado
+        '404':
+          description: Usuario no encontrado
+
+    put:
+      tags:
+        - Users
+      summary: Actualizar un usuario existente
+      parameters:
+        - in: path
+          name: uid
+          required: true
+          schema:
+            type: string
+          description: ID del usuario
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+      responses:
+        '200':
+          description: Usuario actualizado
+        '400':
+          description: Datos inválidos
+
+    delete:
+      tags:
+        - Users
+      summary: Eliminar un usuario
+      parameters:
+        - in: path
+          name: uid
+          required: true
+          schema:
+            type: string
+          description: ID del usuario
+      responses:
+        '200':
+          description: Usuario eliminado
+        '404':
+          description: Usuario no encontrado

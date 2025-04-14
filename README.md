@@ -14,7 +14,7 @@ Esta API permite generar usuarios y mascotas mockeados y almacenarlos en una bas
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/JonatanGuinea/backend-III-coderhouse.git
+   git clone https://github.com/JonatanGuinea/jonatanguinea/backend-III-coderhouse.git
    ```
 
 2. Instala las dependencias:
@@ -146,3 +146,13 @@ Si algo sale mal, la API devolverá una respuesta con el siguiente formato:
 - **bcrypt**: Librería para hashear contraseñas.
 
 
+# 🚀 Imagen Docker del proyecto AdoptMe
+
+Disponible en:  
+👉 [https://hub.docker.com/r/jonatanguinea/recursosbackend-adoptme](https://hub.docker.com/r/jonatanguinea/recursosbackend-adoptme)
+
+### 📦 Cómo usar la imagen
+
+```bash
+docker pull jonatanguinea/recursosbackend-adoptme
+docker run -p 8000:8000 jonatanguinea/recursosbackend-adoptme
