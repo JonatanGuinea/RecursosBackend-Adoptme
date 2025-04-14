@@ -14,7 +14,7 @@ Esta API permite generar usuarios y mascotas mockeados y almacenarlos en una bas
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/JonatanGuinea/jonatanguinea/backend-III-coderhouse.git
+   git clone https://github.com/JonatanGuinea/jonatanguinea/RecursosBackend-Adoptme
    ```
 
 2. Instala las dependencias:
@@ -26,8 +26,8 @@ Esta API permite generar usuarios y mascotas mockeados y almacenarlos en una bas
 3. Crea un archivo `.env` en la raíz del proyecto y agrega las siguientes variables de entorno:
 
    ```env
-   PORT=3000
-   MONGODB_URI=mongodb://localhost:27017/tu_base_de_datos
+   PORT=8000
+   MONGODB_URI=base de datos privada
    ```
 
    - `PORT`: Puerto en el que se ejecutará el servidor.
@@ -42,21 +42,6 @@ Esta API permite generar usuarios y mascotas mockeados y almacenarlos en una bas
    El servidor se ejecutará en el puerto definido (por defecto `http://localhost:8080`).
 
 ## Endpoints
-
-### `GET /`
-
-Este es el endpoint de prueba. Simplemente devuelve un mensaje.
-
-#### Respuesta
-
-```json
-{
-  "error": null,
-  "saludo": {
-    "message": "Welcome to the Mock API"
-  }
-}
-```
 
 ### `GET /api/mocks/mockingusers`
 
